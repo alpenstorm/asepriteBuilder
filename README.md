@@ -1,6 +1,5 @@
  asepriteBuilder is a simple utility designed to make it easy to build the popular sprite editing tool [Aseprite](https://www.aseprite.com) using the source code found [here](https://github.com/aseprite/aseprite/).
-
-
+ 
 ## Dependencies:
 - [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/)
 - [CMake](https://cmake.org/download/)
@@ -30,3 +29,6 @@
 - skiaLocation: the location where you want to place Skia (or where you have Skia, if you installed it), it will create this folder automatically and place Skia inside. Don't set skiaLocation to somewhere inside your source code folder.
 - updateGit: set to `yes` (case sensitive) if you want the script to automatically sync your version of the source code with the version on GitHub. Leave it blank if you don't want to use this option.
 3. Run the [build_aseprite.bat](build_aseprite.bat) file and the build will atomatically start!
+
+## LEGAL DISCLAIMER
+**It's only legal to use this script to compile Aseprite on the end user's computer. If the build process is run on a server not owned by the end user, it's considered distribution and breaks the [Aseprite EULA](https://github.com/aseprite/aseprite/blob/main/EULA.txt). Please check the EULA and abide by its terms.**
