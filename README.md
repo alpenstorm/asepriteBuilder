@@ -20,8 +20,8 @@
    <img src="https://dfstudios.neocities.org/img/aseprite/03.png">
 2. Under Environment Variables > System Variables > Path, click Edit > New and add the variables:
    <img src="https://dfstudios.neocities.org/img/aseprite/04.png">
-   `C:\ninja` (or the FOLDER where you saved Ninja)
-   `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe`
+   - `C:\ninja` (or the FOLDER where you saved Ninja)
+   - `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe`
 
 ### Running the Script
 1. Before running, please paste the batch file and the `config.cfg` file into the folder ABOVE your `aseprite` folder (e.g. if you have aseprite source code in `D:\source\aseprite`, put the files in `D:\source`).
