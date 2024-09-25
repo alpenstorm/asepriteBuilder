@@ -19,13 +19,13 @@
    <img src="https://dfstudios.neocities.org/img/aseprite/04.png">
 
 ### Running the Script
-1. Before running, please paste the batch file and the config.cfg file into the folder ABOVE your aseprite folder (e.g. if you have aseprite source code in D:\source\aseprite, put the files in D:\source).
+1. Before running, please paste the batch file and the config.cfg file into the folder ABOVE your aseprite folder [recommended usage] (e.g. if you have aseprite source code in `D:\source\aseprite`, put the files in D:\source).
 2. Check the config.cfg and assign the variables:
 - `asepriteFolder`: the folder in which the aseprite source code is, for example `D:\source\aseprite` (it's recommended to clone the aseprite repository with `https://github.com/aseprite/aseprite.git`).
 - `ninjaLocation`: the location where you want to place Ninja (or where you have Ninja, if you installed it), it will create this folder automatically and place Ninja inside, and add it to your PATH.
-- `skiaLocation`: the location where you want to place Skia (or where you have Skia, if you installed it), it will create this folder automatically and place Skia inside. Don't set skiaLocation to somewhere inside your source code folder.
+- `skiaLocation`: the location where you want to place Skia (or where you have Skia, if you installed it), it will create this folder automatically and place Skia inside.
 - `updateGit`: set to `yes` (case sensitive) if you want the script to automatically sync your version of the source code with the version on GitHub. Leave it blank if you don't want to use this option.
-3. Run the [build_aseprite.bat](build_aseprite.bat) file and the build will atomatically start!
+1. Run the [build_aseprite.bat](build_aseprite.bat) file and the build will atomatically start!
 
 ## LEGAL DISCLAIMER
 **It's only legal to use this script to compile Aseprite on the end user's computer. If the build process is run on a server not owned by the end user, it's considered distribution and breaks the [Aseprite EULA](https://github.com/aseprite/aseprite/blob/main/EULA.txt). Please check the EULA and abide by its terms.**

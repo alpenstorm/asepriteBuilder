@@ -54,13 +54,6 @@ if not exist %ninjaLocation% (
     echo.
     echo Ninja downloaded and extracted to %skiaLocation%
 )
-
-if not exist "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe" (
-    echo.
-    echo Cannot find the Microsoft Visual Studio CL compiler, check your installation!
-    timeout 10
-    exit 
-)
 REM ============================================
 
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat" -arch=x64
