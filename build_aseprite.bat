@@ -5,30 +5,63 @@ echo Welcome to the Aseprite building tool by alpenstorm!
 echo ***************************
 timeout 10
 
+REM load variables from config.cfg
 for /f "delims=" %%x in (config.cfg) do (set "%%x")
+
+echo.
+echo Loaded variables
 
 cd %asepriteFolder%
 
 if exist build (
     rmdir /s /q build
+
+    echo.
+    echo Removed previous build directory
 )
 
 if "%updateGit%"=="yes" (
     git pull
     git submodule update --init --recursive
+
+    echo.
+    echo Updated GitHub repo
 )
 
+REM check for and download prerequisites
+REM ============================================
 if not exist %skiaLocation% (
     echo.
-    echo Skia folder is empty. Downloading and extracting...
+    echo Skia not found. Downloading and extracting...
     
     curl -L -o "%temp%\Skia-Windows-Release-x64.zip" "https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-Windows-Release-x64.zip"
     PowerShell Expand-Archive "%temp%\Skia-Windows-Release-x64.zip" "%skiaLocation%"
     del "%temp%\Skia-Windows-Release-x64.zip"
 
     echo.
-    echo Skia extracted to %skiaLocation%
+    echo Skia downloaded and extracted to %skiaLocation%
 )
+
+if not exist %ninjaLocation% (
+    echo.
+    echo Ninja not found. Downloading and extracting...
+
+    curl -L -o "%temp%\ninja-win.zip" "https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-win.zip"
+    PowerShell Expand-Archive "%temp%\ninja-win.zip" "%ninjaLocation%"
+    setx path "%PATH%;%ninjaLocation%"
+    del "%temp%\ninja-win.zip"
+    
+    echo.
+    echo Ninja downloaded and extracted to %skiaLocation%
+)
+
+if not exist "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe" (
+    echo.
+    echo Cannot find the Microsoft Visual Studio CL compiler, check your installation!
+    timeout 10
+    exit 
+)
+REM ============================================
 
 call "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat" -arch=x64
 
