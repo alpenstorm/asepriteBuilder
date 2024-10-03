@@ -16,7 +16,7 @@
 ### Environment Variables
 1. Go to Windows Environment variables:
    <img src="https://dfstudios.neocities.org/img/aseprite/03.png">
-2. Under Environment Variables >  System Variables > Path, click Edit > New and add `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe`:
+3. Under Environment Variables >  System Variables > Path, click Edit > New and add `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe`:
    <img src="https://dfstudios.neocities.org/img/aseprite/04.png">
 
 ### Running the Script
