@@ -10,6 +10,7 @@
  1. Install CMake by running the executable you downloaded.
  2. Download VS2022 and SDK
     1. In the Visual Studio Installer app, click `Install` on the icon of the VS2022 editor and check the `Desktop development with C++` and ESPECIALLY the `Windows 11 SDK` in the sidebar:
+
        <img src="https://dfstudios.neocities.org/img/aseprite/01.png">
        <img src="https://dfstudios.neocities.org/img/aseprite/02.png">
 
