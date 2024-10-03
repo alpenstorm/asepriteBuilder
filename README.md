@@ -12,6 +12,7 @@
     1. In the Visual Studio Installer app, click "Install" on the icon of the VS2022 editor and check the "Desktop development with C++" and ESPECIALLY the "Windows 11 SDK" in the sidebar:
    <img src="https://dfstudios.neocities.org/img/aseprite/01.png">
    <img src="https://dfstudios.neocities.org/img/aseprite/02.png">
+
 ### Environment Variables
 1. Go to Windows Environment variables:
    <img src="https://dfstudios.neocities.org/img/aseprite/03.png">
