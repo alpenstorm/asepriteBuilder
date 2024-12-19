@@ -1,4 +1,7 @@
- asepriteBuilder is a simple utility designed to make it easy to build the popular sprite editing tool [Aseprite](https://www.aseprite.com) using the source code found [here](https://github.com/aseprite/aseprite/).
+# UPDATE
+aseprite now includes a build script in the source files. use that instead, it's better
+
+asepriteBuilder is a simple utility designed to make it easy to build the popular sprite editing tool [Aseprite](https://www.aseprite.com) using the source code found [here](https://github.com/aseprite/aseprite/).
  
 ## Dependencies:
 - [Microsoft Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/)
